@@ -1,0 +1,60 @@
+.hatter {
+        background-image: linear-gradient(to left bottom,#c8ead1, #b3e9d0, #9ae8d3, #7be7da, #52e5e5);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:100%;
+        height:100%;
+        border-bottom: 10px solid white;
+        position: fixed;
+        left:0;
+        top:0;
+}
+
+@font-face {
+  font-family: 'Permanent Marker';
+  src: url('../PermanentMarker-Regular.ttf');
+}
+
+h1 {text-align: center;
+    color: white;
+    font-family: "Permanent Marker";
+    font-size: 400%;
+    padding:10px;
+    position: relative; top:25px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    text-align: center;
+}
+
+a.a {color:white; text-decoration:none; font-size:150%; font-family:"Permanent Marker"; position:fixed; left:5px; top:5px;}
+a.a:hover {font-size:170%;}
+
+input.be {
+    border-bottom: 3px solid white;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    margin:20px;
+    width:40%;
+    height:30px;
+}
+input[type=radio] {display:none;}
+input[type=submit] {width:40%; height:60px; border:3px solid white; background-color: transparent; color:white;}
+input:focus {outline: none;}
+
+.szavaz {
+    width:100%;
+    position:fixed;
+    left:-100%;
+    top:40px;
+    transition: 2s;
+    overflow: scroll;
+}
+
+.adat {width:100%; position:fixed; right:0; top:0; transition:3s;}
+.betu {max-width:20%; max-height:60px;}
+input[type="radio"]:checked+label {border-bottom:3px solid white;}

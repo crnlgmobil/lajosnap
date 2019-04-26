@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Szavazás</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="szavazas.css" type="text/css">
+    <script src="szavazas.js"></script>
+</head>
+<body>
+<div class="hatter">
+<form method="post" action="oop.php">
+<div id="adat" class="adat">
+	<h1>Szavazz!</h1>
+	   <h5>A szavazáshoz írja be a nevét és az OM azonosítóját:</h5>
+        <input class="be" type="text" name="nev" placeholder="Név" required><br>
+        <input class="be" type="number" min="10000000000" max="99999999999" name="om" placeholder="OM azonosító" required><br>
+        <h2 onclick="abcde()">Tovább</h2>
+        
+</div>
+
+<div class="szavaz" id="abcde">
+    <h2>Válassza ki, hogy melyik osztályra szeretne szavazni:</h2><br>
+	<input type="radio" name="osztaly" value="A" id="a" required>
+	<label for="a"><img src="a.svg" class="betu"></label><br>
+	<input type="radio" name="osztaly" value="B" id="b" required>
+	<label for="b"><img src="b.svg" class="betu"></label><br>
+	<input type="radio" name="osztaly" value="C" id="c" required>
+	<label for="c"><img src="c.svg" class="betu"></label><br>
+	<input type="radio" name="osztaly" value="D" id="d" required>
+	<label for="d"><img src="d.svg" class="betu"></label><br>
+    <input type="radio" name="osztaly" value="E" id="e" required>
+	<label for="e"><img src="e.svg" class="betu"></label><br><br>
+    <input type="submit"><!--<h2 onclick="kosz()">Tovább</h2>-->
+</div>  
+<!--<div class="szavaz" id="kosz">
+    <h1>Köszönjük, hogy szavazott.</h1>
+    <h4>A szavazás lezárásához kattintson ide:</h4>
+</div>-->
+</form>
+<a href="../Project-L.html" class="a">Programok</a>
+</div>   
+</body>
+</html>

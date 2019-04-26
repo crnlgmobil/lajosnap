@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="szavaz.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<form method="post" action="oop.php">
+    <p>OM azonosító:</p><input type="number" min="10000000000" max="99999999999" name="om" placeholder="72172903911" required>
+    <p>Teljes név:</p><input type="text" name="nev" placeholder="Gipsz Jakab" required>
+<br>
+<h3> Melyik osztályra szavazol? </h3>
+<table>
+ <tr>
+  <td><h4>&nbsp A &nbsp</h4></td>
+  <td><input type="radio" name="osztaly" value="A" required></td>
+ </tr>
+  <tr>
+  <td><h4>&nbsp B &nbsp</h4></td>
+  <td><input type="radio" name="osztaly" value="B" required></td>
+ </tr>
+  <tr>
+  <td><h4>&nbsp C &nbsp</h4></td>
+  <td><input type="radio" name="osztaly" value="C" required></td>
+ </tr>
+  <tr>
+  <td><h4>&nbsp D &nbsp</h4></td>
+  <td><input type="radio" name="osztaly" value="D" required></td>
+ </tr>
+  <tr>
+  <td><h4>&nbsp E &nbsp</h4></td>
+  <td><input type="radio" name="osztaly" value="E" required></td>
+ </tr>
+</table>
+
+<br><input type="submit">
+</form>
+<i><p>Ha szavazol, akkor elfogadod az <a href="adat.html" target="_blank">Adatkezelési információkat</a></p></i>
+</body>
+</html>
+
+

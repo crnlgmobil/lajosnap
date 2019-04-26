@@ -1,0 +1,51 @@
+.hatter {
+        background-image: linear-gradient(to left bottom,#EA7C5F,#F6915B,#FDA858,#FFC059,#FFD95E);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:100%;
+        height:100%;
+        border: 10px solid white;
+        position: fixed;
+        left:0;
+        top:0;
+}
+
+@font-face {
+  font-family: 'Permanent Marker';
+  src: url('PermanentMarker-Regular.ttf');
+}
+
+@keyframes example {
+  0%   {color: transparent;}
+  100% {color: white;}
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.most {animation-name: example; animation-duration: 3s;}
+h1 {text-align: center;
+    color: white;
+    font-family: "Permanent Marker";
+    font-size: 400%;
+    padding:10px;
+    position: relative; top:25px;
+    animation-name: spin;
+    animation-duration: 0.5s;
+}
+
+.l { position:fixed; bottom:-5px; left:10px; height:55%; max-width: 50%;}
+.r { position:fixed; bottom:-5px; right:-5px; height:55%; max-width: 50%;}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    text-align: center;
+}
+
+.gomb {height:10%; position:fixed; left:10px; top:10px;}
+.x {height:10%; position:fixed; top:-12%; left:41%; transition: top 1s;}
+.menu {color:black; width:40%; height: 100%; background-color: rgba(255,255,255,0.9); position: fixed; left:-40%; top:0; border-top: 10px solid white; transition: left 1s;}
+
+.vis {position:fixed; left:40%; top:0; height:100%; width:60%;}
+
+.szavazas {position:fixed; top:10px; right:10px; color:white; font-size:150%; font-family:"Permanent Marker"; text-decoration:none;}
+.szavazas:hover {font-size:170%;}
