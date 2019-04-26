@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=stylesheet href="Project-L.css" type="text/css">
     <style>
+        img{
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
@@ -16,13 +19,15 @@
 <img class="l" src="le.svg" alt="kep">
 <h1>Lajos nap</h1>
 <div class="most" >
-    <h4>Jelenlegi programok:</h4>
+    <h4>Minden program:</h4>
 </div>
 <div class="menu" id="qtya">
-<p>Krisztián</p>
+<a href="index.html">Aktuális programok</a>
 </div>  
 <div class="vis" onclick="vis()" ></div>  
 <img src="x.svg" class="x" id="x" onclick="vis()">
+    <div style="overflow: scroll; height: 70%;">
+
         <script>
 			//var l = document.querySelectorAll("#tartalom div");
 			
@@ -30,13 +35,6 @@
             var honap = 03; //A hónapokat 0-tól kezdve számozza!
             var nap = 30;
             var most = new Date();
-            var elso = new Date(ev, honap, nap, 7, 0);
-            var utso = new Date(ev, honap, nap, 14, 10);
-            if (elso>most){
-                document.write("Még nem jött el az én órám!<br><i>Jn 2, 4</i>");
-            } else if(utso<most){
-                document.write("Napjaim elmúltak<br><i>Jób 17, 11</i>");
-            }
             
             
             function aktual(kezdet, veg, szoveg){
@@ -84,7 +82,8 @@
             aktual(new Date(ev, honap, nap, 13, 10), new Date(ev, honap, nap, 13, 30), "Eredményhirdetés [sportpálya]");
             aktual(new Date(ev, honap, nap, 13, 30), new Date(ev, honap, nap, 14, 10), "Tanár-diák foci");
             
-        </script>
+        </script> 
+        </div>
     </div>
 <a href="szavazas/szavazas.html" class="szavazas">Szavazás</a>
 </body>
