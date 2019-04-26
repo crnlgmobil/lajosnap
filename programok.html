@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lajos nap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="Project-L.css" type="text/css">
+    <style>
+    </style>
+</head>
+<body>
+<script src="L.js"></script>
+<div class="hatter">
+<img src="menu.svg" class="gomb" onclick="alma()" id="gomb">
+<img class="r" src="ri.svg" alt="kep">
+<img class="l" src="le.svg" alt="kep">
+<h1>Lajos nap</h1>
+<div class="most" >
+    <h4>Jelenlegi programok:</h4>
+</div>
+<div class="menu" id="qtya">
+<p>Krisztián</p>
+</div>  
+<div class="vis" onclick="vis()" ></div>  
+<img src="x.svg" class="x" id="x" onclick="vis()">
+        <script>
+			//var l = document.querySelectorAll("#tartalom div");
+			
+            var ev = 2019;
+            var honap = 03; //A hónapokat 0-tól kezdve számozza!
+            var nap = 30;
+            var most = new Date();
+            var elso = new Date(ev, honap, nap, 7, 0);
+            var utso = new Date(ev, honap, nap, 14, 10);
+            if (elso>most){
+                document.write("Még nem jött el az én órám!<br><i>Jn 2, 4</i>");
+            } else if(utso<most){
+                document.write("Napjaim elmúltak<br><i>Jób 17, 11</i>");
+            }
+            
+            
+            function aktual(kezdet, veg, szoveg){
+                    document.write("<p><b>"+kezdet.getHours()+":");
+                    if(kezdet.getMinutes().toString().length!=1){document.write(kezdet.getMinutes());}else{document.write("0"+kezdet.getMinutes());}
+                    document.write("-"+veg.getHours()+":");
+                    if(veg.getMinutes().toString().length!=1){document.write(veg.getMinutes());} else{document.write("0"+veg.getMinutes());}
+                    document.write("</b> "+szoveg+"</p>");
+            }
+            
+            aktual(new Date(ev, honap, nap, 7, 30), new Date(ev, honap, nap, 8, 00), " Evangélium, Ima, főzőlapok kiosztása");
+            //aktual(new Date(ev, honap, nap, 0), new Date(ev, honap, nap, 0), "");
+            aktual(new Date(ev, honap, nap, 8, 0), new Date(ev, honap, nap, 12,30), "Főzőverseny [udvar]");
+            aktual(new Date(ev, honap, nap, 8, 0), new Date(ev, honap, nap, 8, 30), "DJ Makkos [sportpálya]");
+            aktual(new Date(ev, honap, nap, 8, 0), new Date(ev, honap, nap, 8, 30), "Ciszterek futása [mindenhol]");
+            aktual(new Date(ev, honap, nap, 8, 30), new Date(ev, honap, nap, 9, 30), "Királyválasztási műsorok [díszterem]");
+            aktual(new Date(ev, honap, nap, 9, 30), new Date(ev, honap, nap, 10, 0), "Királyi vita [díszterem]");
+            aktual(new Date(ev, honap, nap, 9, 50), new Date(ev, honap, nap, 10, 30), "Tanár-diák kosár [sportcsarnok]");
+            aktual(new Date(ev, honap, nap, 10, 0), new Date(ev, honap, nap, 10, 30), "DJ Makkos [sportpálya]");
+            aktual(new Date(ev, honap, nap, 10, 0), new Date(ev, honap, nap, 12, 0), "Szavazás");
+            aktual(new Date(ev, honap, nap, 10, 0), new Date(ev, honap, nap, 13, 0), "Lézerbarlang [pince]");
+            aktual(new Date(ev, honap, nap, 10, 0), new Date(ev, honap, nap, 13, 0), "Karaoke [fszt. 2.]");
+            aktual(new Date(ev, honap, nap, 10, 0), new Date(ev, honap, nap, 13, 0), "Just Dance [fszt. 3.]");
+            aktual(new Date(ev, honap, nap, 10, 0), new Date(ev, honap, nap, 13, 0), "Kinect Adventure [fszt. 4.]");
+            aktual(new Date(ev, honap, nap, 10, 0), new Date(ev, honap, nap, 13, 0), "Kinect Sport [fszt. 5.]");
+            aktual(new Date(ev, honap, nap, 10, 0), new Date(ev, honap, nap, 13, 0), "Rekeszmászás [platánfa]");
+            aktual(new Date(ev, honap, nap, 10, 0), new Date(ev, honap, nap, 12, 0), "Ütközés szimulátor [kapualj]");
+            aktual(new Date(ev, honap, nap, 10, 0), new Date(ev, honap, nap, 13, 0), "Henna, csillámtetkó [kemence]");
+            aktual(new Date(ev, honap, nap, 10, 0), new Date(ev, honap, nap, 12, 0), "Porpáczy Attilával beszélgetés [rajzterem]");
+            aktual(new Date(ev, honap, nap, 10, 0), new Date(ev, honap, nap, 12, 0), "Rendőrök [parkoló1]");
+            aktual(new Date(ev, honap, nap, 10, 0), new Date(ev, honap, nap, 12, 0), "Állatsimogató [parkoló2]");
+            aktual(new Date(ev, honap, nap, 10, 0), new Date(ev, honap, nap, 12, 0), "Íjászat [csarnok mögött]");
+            aktual(new Date(ev, honap, nap, 10, 0), new Date(ev, honap, nap, 11, 30), "TUDOK [67-es terem]");
+            aktual(new Date(ev, honap, nap, 10, 0), new Date(ev, honap, nap, 12, 0), "Szabadulószoba matek [tükörterem, színpad]");
+            aktual(new Date(ev, honap, nap, 10, 10), new Date(ev, honap, nap, 10, 30), "Storcz Julcsi [68-as terem]");
+            aktual(new Date(ev, honap, nap, 10, 10), new Date(ev, honap, nap, 11, 10), "Kísérleti bemutatók [díszterem]");
+            aktual(new Date(ev, honap, nap, 10, 30), new Date(ev, honap, nap, 11, 30), "DJ Hock [sportpálya]");
+            aktual(new Date(ev, honap, nap, 10, 30), new Date(ev, honap, nap, 11, 10), "Tanár-diák röpi [sportcsarnok]");
+            aktual(new Date(ev, honap, nap, 10, 30), new Date(ev, honap, nap, 11, 20), "Hammerl László [68-as terem]");
+            aktual(new Date(ev, honap, nap, 10, 40), new Date(ev, honap, nap, 11, 40), "Mentők [parkoló1]");
+            aktual(new Date(ev, honap, nap, 11, 10), new Date(ev, honap, nap, 14, 10), "Buborékfoci [sportcsarnok]");
+            aktual(new Date(ev, honap, nap, 11, 30), new Date(ev, honap, nap, 12, 10), "Ciszterek Ligája bronzmérkőzés [sportpálya]");
+            aktual(new Date(ev, honap, nap, 12, 10), new Date(ev, honap, nap, 12, 30), "Koronázás [sportpálya]");
+            aktual(new Date(ev, honap, nap, 12, 30), new Date(ev, honap, nap, 13, 10), "Ciszterek Ligája döntő [sportpálya]");
+            aktual(new Date(ev, honap, nap, 13, 10), new Date(ev, honap, nap, 13, 30), "Eredményhirdetés [sportpálya]");
+            aktual(new Date(ev, honap, nap, 13, 30), new Date(ev, honap, nap, 14, 10), "Tanár-diák foci");
+            
+        </script>
+    </div>
+<a href="szavazas/szavazas.html" class="szavazas">Szavazás</a>
+</body>
+</html>
