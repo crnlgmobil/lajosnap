@@ -50,4 +50,4 @@ body {
 .szavazas {position:fixed; top:10px; right:10px; color:white; font-size:150%; font-family:"Permanent Marker"; text-decoration:none;}
 .szavazas:hover {font-size:170%;}
 
-.programok {text-align:left;}
+.programok {text-align:left; padding:20px;}
