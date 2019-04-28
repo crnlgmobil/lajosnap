@@ -51,3 +51,5 @@ body {
 .szavazas:hover {font-size:170%;}
 
 .programok {text-align:left; padding:20px;}
+
+a {text-decoration:none; color:black; font-weight:bold}
