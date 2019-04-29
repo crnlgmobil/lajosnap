@@ -12,6 +12,14 @@
 <form method="post" action="oop.php">
 <div id="adat" class="adat">
 	<h1>Szavazz!</h1>
+    <!--<script>
+        var most = new Date();
+        if (most<new Date(2019,03,30,10,00)){
+            document.write("<p>Még nem szavazhatsz.</p>");
+        } else if (most>new Date(2019,03,30,12,00)){
+            document.write("<p>Már nem szavazhatsz.</p>")
+        }
+    </script>-->
 	   <h5>A szavazáshoz írja be a nevét és az OM azonosítóját:</h5>
         <input class="be" type="text" name="nev" placeholder="Név" required><br>
         <input class="be" type="number" min="10000000000" max="99999999999" name="om" placeholder="OM azonosító" required><br>
