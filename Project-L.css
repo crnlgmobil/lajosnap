@@ -21,7 +21,7 @@
 }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-.most {animation-name: example; animation-duration: 3s;}
+.most {animation-name: example; animation-duration: 3s; overflow-y:scroll;}
 h1 {text-align: center;
     color: white;
     font-family: "Permanent Marker";
