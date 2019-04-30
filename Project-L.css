@@ -29,9 +29,7 @@ h1 {text-align: center;
     padding:10px;
     position: relative; top:25px;
     animation-name: spin;
-    animation-duration: 0.5s;
-        height:60%;
-}
+    animation-duration: 0.5s;}
 
 .l { position:fixed; bottom:-5px; left:10px; height:55%; max-width: 50%;}
 .r { position:fixed; bottom:-5px; right:-5px; height:55%; max-width: 50%;}
