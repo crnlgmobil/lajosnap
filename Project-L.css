@@ -30,6 +30,7 @@ h1 {text-align: center;
     position: relative; top:25px;
     animation-name: spin;
     animation-duration: 0.5s;
+        height:60%;
 }
 
 .l { position:fixed; bottom:-5px; left:10px; height:55%; max-width: 50%;}
